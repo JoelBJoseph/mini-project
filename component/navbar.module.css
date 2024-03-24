@@ -1,0 +1,33 @@
+.container{
+    background-color: transparent;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.link{
+    margin: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.link:hover:after{
+    width: 100%;
+}

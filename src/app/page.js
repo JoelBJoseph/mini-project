@@ -1,12 +1,14 @@
-"use server";
-
 import Image from "next/image";
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
+import Navabar from "../../component/Navabar";
+import Link from "next/link";
+
 
 const App = () => {
   return(
-      <div className={"container"}>
 
+      <div className={"container"}>
+            <Navabar/>
           <div className={"image-container"}>
               <Image src={"/familyphoto.png"} alt={"Family-Photo"} layout={"fill"}
                      objectFit={"cover"}/>
@@ -25,8 +27,13 @@ const App = () => {
           </div>
 
           <div className={"button-container"}>
-              <button className={"learn-more"}>Learn More</button>
-              <button className={"sign-up"}>Sign Up</button>
+              <Link href={"/services"}>
+                  <button className={"learn-more"}>Learn More</button>
+              </Link>
+              <Link href={"/signup"}>
+                  <button className={"sign-up"}>Sign Up</button>
+              </Link>
+
           </div>
 
       </div>

@@ -4,23 +4,26 @@
 
 body{
   background-color: white;
-  color: white;
+  color: black;
 }
 
 .container{
   text-align: center;
+  color: white;
 }
 
 .image-container{
   z-index: -1;
   position: fixed;
   width: 100%;
-  height: 100%
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .header-container{
+  margin-top: 110px;
   padding: 50px;
-  margin-top: 10px;
 }
 
 /*.background-image{*/
@@ -34,9 +37,9 @@ body{
 /*}*/
 
 .heading{
-  margin-top: 30px;
+  margin-top: 50px;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .content_container{
@@ -75,9 +78,9 @@ body{
 }
 
 .sign-up{
-  background-color: transparent;
-  color: white;
-  border: solid white 2px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
   padding: 10px 28px;
   border-radius: 30px;
   transition: color ease 0.3s, background-color ease 0.3s, border ease 0.3s;

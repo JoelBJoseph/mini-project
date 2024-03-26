@@ -1,6 +1,7 @@
-import style from "./staff_signin.module.css"
+import style from "@/app/signup/signup.module.css";
 import Link from "next/link";
-const Signin = () => {
+
+const Signup = () => {
     return (
         <div className={style.container}>
             <div className={style.cardContainer}>
@@ -13,9 +14,9 @@ const Signin = () => {
 
                 <div className={style.headerContainer}>
                     <span className={style.head}>Sign in for Staff</span><br/>
-                    <span className={style.subHead}>New to this?
-                        <Link href={"/signup"}>
-                            <span className={style.link}> Create an Account</span>
+                    <span className={style.subHead}>Have an Account?
+                        <Link href={"/sign-in"}>
+                            <span className={style.link}> Sign In</span>
                         </Link></span>
                 </div>
 
@@ -31,20 +32,17 @@ const Signin = () => {
                                placeholder={"Enter your password"}/><br/>
                     </div>
 
-                    <button className={style.signin}>Sign In</button>
+                    <button className={style.signin}>Create Account</button>
                     <br/>
-                    <span className={style.forgot}>Forgot your password?</span>
                 </div>
-                <svg width="450" height="2">
-                    <line x1="0" y1="1" x2="100%" y2="1" stroke="#333" stroke-width="2"/>
-                </svg>
-                <div className={style.continueContainer}>
-                    <span className={style.or}>or sign in using:</span><br/>
-                    <button className={style.google}>Continue with Google</button>
+
+                <div className={style.agree}>
+                    By creating account, you agree to our <br/>
+                    <span className={style.terms}>Terms of Service</span>
                 </div>
 
             </div>
         </div>
     );
 }
-export default Signin
+export default Signup

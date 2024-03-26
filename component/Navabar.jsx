@@ -43,12 +43,13 @@ const Navabar = () => {
     return(
             <nav className={style.container}>
                 <ul className={style.nav}>
+                    <Link href={"/"} className={style.name}>solidServe</Link>
                     {links.map((link, index) => (
                         <Link key={link.id} href={link.url} className={style.link}>
                         <span className={activeItem === link.title ? 'active' : ""}
                               onClick={() => handleClick(link.title)}>{link.title}</span>
                         </Link>))}
-                    <Link  href={"/sign-in"} className={style.link}>
+                    <Link  href={"/sign-in"} className={style.signin}>
                         <button className={style.staff_login} type={"button"}>Sign in</button>
                     </Link>
                 </ul>

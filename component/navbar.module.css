@@ -1,8 +1,10 @@
 .container{
-    background-color: transparent;
+    background-color: white;
+    top: 0;
     color: black;
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 
 .nav{
@@ -10,6 +12,8 @@
     margin: 0;
     padding: 0;
     display: flex;
+    min-width: 700px;
+    align-items: center;
 }
 
 .link{
@@ -17,6 +21,15 @@
     font-weight: bold;
     text-decoration: none;
     position: relative;
+}
+
+.name{
+    padding: 18px;
+    margin-right: 200px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    font-size: 30px;
 }
 
 .link::after{
@@ -30,4 +43,19 @@
 
 .link:hover:after{
     width: 100%;
+}
+
+.signin{
+    margin-left: 250px;
+    min-width: 114px;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: white;
+    transition: background-color ease 0.3s,color ease 0.3s;
+}
+
+.learn-more:hover{
+    background-color: white;
+    color: dodgerblue;
 }

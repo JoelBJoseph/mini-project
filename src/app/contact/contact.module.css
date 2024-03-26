@@ -1,0 +1,91 @@
+.container{
+    text-align: center;
+}
+
+.topContainer{
+    padding: 40px;
+}
+
+.head{
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.subHead{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.learnmore{
+    margin-right: 10px;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    border: solid dodgerblue 2px;
+    border-radius: 30px;
+    color: white;
+    transition: background-color ease 0.3s, color ease 0.3s, border ease 0.3s;
+}
+
+.learnmore:hover{
+    background-color: white;
+    color: dodgerblue;
+    border: solid dodgerblue 2px;
+}
+
+.signup{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: solid black 2px;
+    padding: 10px 28px;
+    border-radius: 30px;
+    transition: color ease 0.3s, background-color ease 0.3s, border ease 0.3s;
+}
+
+.signup:hover{
+    color: white;
+    background-color: black;
+    border: solid black 2px;
+}
+
+.contactContainer{
+    text-align: left;
+    padding: 40px;
+}
+
+.input{
+    padding: 8px;
+    width: 300px;
+    margin-bottom: 5px;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.btn{
+    border: solid black 1px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+.form{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.subscribe{
+
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.image{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}

@@ -1,0 +1,105 @@
+.teamContainer{
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.textContainer{
+    width: 50%;
+}
+
+.imageContainer{
+    width: 50%;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
+
+.headContainer{
+    text-align: left;
+    margin-top: 50px;
+    padding: 50px;
+    width: 630px;
+}
+
+.head{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.content_container{
+
+    font-size: 15px;
+    padding: 10px;
+    width: 550px;
+    margin-left: 42px;
+    text-align: left;
+}
+
+.content{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.btnContainer{
+
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 42px;
+}
+
+.learnmore{
+    margin-right: 10px;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    border: solid dodgerblue 2px;
+    border-radius: 30px;
+    color: white;
+    transition: background-color ease 0.3s, color ease 0.3s, border ease 0.3s;
+}
+
+.learnmore:hover{
+    background-color: white;
+    color: dodgerblue;
+    border: solid dodgerblue 2px;
+}
+
+.signup{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: solid black 2px;
+    padding: 10px 28px;
+    border-radius: 30px;
+    transition: color ease 0.3s, background-color ease 0.3s, border ease 0.3s;
+}
+
+.signup:hover{
+    color: white;
+    background-color: black;
+    border: solid black 2px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .textContainer,
+    .imageContainer{
+        width: 100%;
+        text-align: left;
+    }
+}

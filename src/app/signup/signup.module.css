@@ -6,7 +6,7 @@
     border: solid grey 2px;
     border-radius: 5px;
     width: 580px;
-    height: 630px;
+    height: 650px;
     padding: 50px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .headerContainer{
-    padding: 5px;
+    padding: 10px;
 }
 
 .head{
@@ -65,7 +65,6 @@
 .signin{
     margin-top: 20px;
     margin-right: 39px;
-    margin-bottom: 13px;
     background-color: dodgerblue;
     color: white;
     width: 300px;
@@ -73,26 +72,12 @@
     border-radius: 5px;
 }
 
-.forgot{
-    color: dodgerblue;
-    text-align: center;
-    margin-right: 40px;
-}
-
-.continueContainer{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.or{
+.agree{
     color: grey;
+    font-size: 12px;
 }
 
-.google{
-    border: solid grey 2px;
-    width: 300px;
-    padding: 7px;
-    border-radius: 5px;
+.terms{
     color: dodgerblue;
-    margin-top: 15px;
+    font-weight: bold;
 }

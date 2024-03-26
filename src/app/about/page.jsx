@@ -1,25 +1,43 @@
 import style from ".//about.module.css"
 import Image from "next/image";
+import Navabar from "../../../component/Navabar";
+import Link from "next/link";
 
 const About = () =>{
     return(
-        <div>
-            <div className={style.headContainer}>
-                <span className={style.head}>Simplify government management with our
+        <div className={style.aboutContainer}>
+
+            <Navabar/>
+
+            <div className={style.container}>
+
+                <div className={style.textContainer}>
+                    <div className={style.headContainer}>
+                    <span className={style.head}>Simplify government management with our
                     user-friendly application</span>
+                    </div>
+
+                    <div className={style.content_container}>
+                        <p className={style.content}>
+                            Experience the ease and efficiency of managing government services
+                            with our user interface government Akshaya Center management application
+                        </p>
+                    </div>
+
+                    <div className={style.btnContainer}>
+                        <Link href={"/services"}>
+                            <button className={style.learnmore}>Learn More</button>
+                        </Link>
+                        <Link href={"/signup"}>
+                            <button className={style.signup}>Sign Up</button>
+                        </Link>
+                    </div>
+                </div>
+                <div className={style.imageContainer}>
+                    <Image className={style.image} src={"/queue.png"} alt={"queue"} width={500} height={300}/>
+                </div>
             </div>
-            <div className={style.content_container}>
-                <p className={style.content}>
-                    Experience the ease and efficiency of managing government services
-                    with our user interface government Akshaya Center management application
-                </p>
-                <Image className={style.image} src={"/../../public/images/familyphotot@2x.png"} alt={"family-Photo"}
-                       width={600} height={800}/>
-            </div>
-            <div className={style.btnContainer}>
-                <button className={"learn-more"}>Learn More</button>
-                <button className={"sign-up"}>Sign Up</button>
-            </div>
+
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import Navabar from "../../../component/Navabar";
 import Link from "next/link";
-import style from "@/app/contact/contact.module.css";
+import style from "./contact.module.css";
 import Image from "next/image";
 
 const Contact = () =>{

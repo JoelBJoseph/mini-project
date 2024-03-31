@@ -2,6 +2,7 @@ import Image from "next/image";
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 import Navabar from "../../component/Navabar";
 import Link from "next/link";
+import About from "@/app/about/page";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
               </Link>
 
           </div>
+          <About/>
 
       </div>
   );

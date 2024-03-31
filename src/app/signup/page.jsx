@@ -1,4 +1,4 @@
-import style from "@/app/signup/signup.module.css";
+import style from "./signup.module.css";
 import Link from "next/link";
 
 const Signup = () => {

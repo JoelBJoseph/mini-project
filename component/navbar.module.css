@@ -1,61 +1,65 @@
 .container{
-    background-color: white;
-    top: 0;
-    color: black;
+    height: 100px;
     display: flex;
-    justify-content: center;
-    z-index: -1;
-}
-
-.nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-width: 700px;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.link{
-    margin: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    position: relative;
-}
-
-.name{
-    padding: 18px;
-    margin-right: 200px;
-    font-weight: bolder;
-    text-decoration: none;
-    position: relative;
+.logo{
     font-size: 30px;
+    font-weight: bold;
+    margin-right: 100px;
 }
 
-.link::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition: width 0.3s ease;
+.ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
-.link:hover:after{
-    width: 100%;
-}
-
-.signin{
-    margin-left: 250px;
-    min-width: 114px;
-    background-color: dodgerblue;
-    padding: 10px 30px;
-    border-radius: 30px;
-    color: white;
-    transition: background-color ease 0.3s,color ease 0.3s;
-}
-
-.learn-more:hover{
+.active{
     background-color: white;
-    color: dodgerblue;
+    color: black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: solid black 2px;
+}
+
+.mobileLinks{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+@media(max-width: 730px){
+    .ul{
+        display: none;
+    }
+    .mobileLinks{
+        position: absolute;
+        color: black;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        height: calc(100vh - 100px);
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: height 0.5s ease-in-out;
+        z-index: 1;
+    }
+
+    .menu{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+    }
 }

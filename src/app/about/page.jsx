@@ -1,4 +1,4 @@
-import style from ".//about.module.css"
+import style from "./about.module.css"
 import Image from "next/image";
 import Navabar from "../../../component/Navabar";
 import Link from "next/link";

@@ -1,59 +1,63 @@
 "use client";
 
+import styles from "./Navbar.module.css"
+import NavLink from "./navLink/NavLink.jsx"
 import Link from "next/link";
-import style from "/component/navbar.module.css"
 import {useState} from "react";
 
-const Navabar = () => {
+const links = [
+    {
+        title: "Home",
+        url: "/",
+    },
+    {
+        title: "About",
+        url: "/about",
+    },
+    {
+        title: "Blog",
+        url: "/blog",
+    },
+    {
+        title: "Contact",
+        url: "/contact",
+    },
+];
 
-    const [activeItem,setactiveItem] = useState('home');
+const Navbar = () => {
 
-    const handleClick = (itemname) => {
-        setactiveItem(itemname)
-    }
+    const[open,setOpen] = useState(false)
 
-    const links = [
-        {
-            id: 1,
-            url: "/",
-            title: "Home"
-        },
-        {
-            id: 2,
-            url: "/about",
-            title: "About"
-        },
-        {
-            id: 3,
-            url: "/services",
-            title: "Services"
-        },
-        {
-            id:4,
-            url: "/team",
-            title: "Team"
-        },
-        {
-            id: 5,
-            url: "/contact",
-            title: "Contact"
-        },
-    ]
+    const session = false;
 
-    return(
-            <nav className={style.container}>
-                <ul className={style.nav}>
-                    <Link href={"/"} className={style.name}>solidServe</Link>
-                    {links.map((link, index) => (
-                        <Link key={link.id} href={link.url} className={style.link}>
-                        <span className={activeItem === link.title ? 'active' : ""}
-                              onClick={() => handleClick(link.title)}>{link.title}</span>
-                        </Link>))}
-                    <Link  href={"/sign-in"} className={style.signin}>
-                        <button className={style.staff_login} type={"button"}>Sign in</button>
-                    </Link>
+    return (
+        <nav className={styles.container}>
+            <div>
+                <Link className={styles.logo} href={"/"}>solidServe</Link>
+            </div>
+            <div>
+                <ul className={styles.ul}>
+                    {links.map((link) => (
+                        <NavLink item={link} key={link.title}/>
+                    ))}
+                    {
+                        session ? (
+                            <button>Logout</button>
+                        ) : (
+                            <NavLink item={{title: "Login", url: "/login"}}/>
+                        )
+                    }
                 </ul>
-            </nav>
+            </div>
+            <button onClick={() => setOpen(prev => !prev)} className={styles.menu}>Menu</button>
+            {
+                open && <div className={styles.mobileLinks}>
+                    {links.map((link) => (
+                        <NavLink item={link} key={link.title}/>
+                    ))}
+                </div>
+            }
+        </nav>
     );
 }
-export default Navabar
+export default Navbar

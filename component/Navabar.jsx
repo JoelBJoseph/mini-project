@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Navbar.module.css"
+import styles from "./navbar.module.cssavbar.module.css"
 import NavLink from "./navLink/NavLink.jsx"
 import Link from "next/link";
 import {useState} from "react";

@@ -15,8 +15,12 @@ const links = [
         url: "/about",
     },
     {
-        title: "Blog",
-        url: "/blog",
+        title: "Services",
+        url: "/services",
+    },
+    {
+        title: "Team",
+        url: "/team",
     },
     {
         title: "Contact",
@@ -44,7 +48,7 @@ const Navbar = () => {
                         session ? (
                             <button>Logout</button>
                         ) : (
-                            <NavLink item={{title: "Login", url: "/login"}}/>
+                            <NavLink item={{title: "Login", url: "/sign-in"}}/>
                         )
                     }
                 </ul>

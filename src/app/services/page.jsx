@@ -1,13 +1,10 @@
 import style from "./service.module.css"
-import Navabar from "../../../component/Navabar";
 import Image from "next/image";
 import Link from "next/link";
 
 const Services = () =>{
     return (
         <div className={style.serviceContainer}>
-
-            <Navabar/>
 
             <div className={style.container}>
 

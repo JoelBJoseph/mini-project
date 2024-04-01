@@ -1,15 +1,10 @@
 import Image from "next/image";
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
-import Navabar from "../../component/Navabar";
 import Link from "next/link";
-import About from "@/app/about/page";
-
 
 const App = () => {
   return(
 
       <div className={"container"}>
-            <Navabar/>
           <div className={"image-container"}>
               <Image src={"/familyphoto.png"} alt={"Family-Photo"} layout={"fill"}
                      objectFit={"cover"}/>
@@ -36,7 +31,6 @@ const App = () => {
               </Link>
 
           </div>
-          <About/>
 
       </div>
   );

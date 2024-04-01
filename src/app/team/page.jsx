@@ -1,5 +1,5 @@
 import style from "./team.module.css"
-import Navabar from "../../../component/Navabar";
+import Navabar from "../../../component/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,4 +1,3 @@
-import Navabar from "../../../component/Navabar";
 import Link from "next/link";
 import style from "./contact.module.css";
 import Image from "next/image";
@@ -6,7 +5,6 @@ import Image from "next/image";
 const Contact = () =>{
     return(
         <div className={style.container}>
-            <Navabar/>
 
             <div className={style.topContainer}>
 

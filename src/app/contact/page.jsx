@@ -38,7 +38,7 @@ const Contact = () =>{
                         <span className={style.subHead}>By clicking SignUp, you agree to our Terms and Condition</span>
                     </div>
                 </div>
-                <Image className={style.image} src={"/cloud.png"} alt={"background"} width={1000} height={100}/>
+                <Image className={style.image} src={"/cloud.png"} alt={"background"} layout={"fill"}/>
             </div>
 
         </div>

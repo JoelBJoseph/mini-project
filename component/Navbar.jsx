@@ -59,6 +59,13 @@ const Navbar = () => {
                     {links.map((link) => (
                         <NavLink item={link} key={link.title}/>
                     ))}
+                    {
+                        session ? (
+                            <button>Logout</button>
+                        ) : (
+                            <NavLink item={{title: "Login", url: "/sign-in"}}/>
+                        )
+                    }
                 </div>
             }
         </nav>

@@ -1,14 +1,10 @@
 import style from "./team.module.css"
-import Navabar from "../../../component/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
 const Team = () => {
     return (
         <div className={style.teamContainer}>
-
-            <Navabar/>
-
             <div className={style.container}>
 
                 <div className={style.textContainer}>
